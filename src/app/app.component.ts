@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'themes';
+  storedTheme:string;
+
+
+  ngOnInit(){
+    let theme = localStorage.getItem('theme');
+    this.storedTheme = theme;
+  }
+
+  
+  storeTheme(theme){
+    localStorage.setItem('theme',theme);
+    this.storedTheme = theme;
+  }
 }

@@ -1,0 +1,35 @@
+
+
+.theme-selector{
+    max-width: 800px;
+    text-align: right;
+    padding: 20px 0;
+
+    div{
+        border:1px solid black;
+        height:20px;
+        width:20px;
+        display: inline-block;
+        margin:2px;
+        cursor:pointer;
+        border-radius:5px;
+
+        &.active{
+            opacity: 1;
+        }
+    }
+
+    #theme-white{
+        background-color: white;
+    }
+    #theme-black{
+        background-color: black;
+    }
+    #theme-green{
+        background-color: green;
+    }
+    #theme-orange{
+        background-color: orange;
+    }
+   
+}
